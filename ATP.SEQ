@@ -1,0 +1,24 @@
+sequence_type:     2
+    3
+    1      1      1  
+ 1.0000000E+000   1.0000000E+000   1.0000000E+000  
+ 0.0000000E+000   1.3120000E+002   3.5085000E+002  
+    2
+    3
+ 0.0000000E+000
+ 1.8040000E+001
+ 1.5970000E+001
+
+    1
+
+*******sector_number:     1
+*********sector_type:     1
+number_of_timepoints:     1
+number_of_evolpoints:     1
+******total_duration:  1.0000000E-005
+******pulse_filename: rf1
+****offset_frequency:  0.0000000E+000
+**************remark: excitaition
+
+result.bin
+
