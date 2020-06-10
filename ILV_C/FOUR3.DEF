@@ -1,0 +1,9 @@
+DEFINITION MODULE FOUR3; (* 12-06-1991 / LAST CHANGE BY H.S. *)
+EXPORT QUALIFIED four2,fft;
+
+PROCEDURE four2(VAR data:ARRAY OF REAL;nn:CARDINAL;terug:BOOLEAN);
+
+PROCEDURE fft(ap:INTEGER;VAR real,imaginary:ARRAY OF REAL;
+                        boole1:BOOLEAN);
+
+END FOUR3.

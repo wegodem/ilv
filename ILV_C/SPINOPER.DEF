@@ -1,0 +1,35 @@
+DEFINITION MODULE SpinOperatorLib;
+FROM MatrixMathLib IMPORT CMatrix;
+EXPORT QUALIFIED MakeKets,MakeMatrixIplus,MakeMatrixImin,MakeMatrixIx,
+                 MakeMatrixIy,MakeMatrixIz,Iarray,produktket,
+                 MakeTotalIx,MakeTotalIy,MakeTotalIz;
+
+CONST Nspmax = 4;
+      Nstmax = 16;
+TYPE Iarray = ARRAY[1..Nspmax] OF INTEGER;
+     produktket = ARRAY[1..Nstmax],[1..Nstmax] OF INTEGER;
+     
+
+
+PROCEDURE MakeKets(VAR ket:produktket; Ilist:Iarray);
+PROCEDURE MakeMatrixIplus(Ilist:Iarray;VAR ket: produktket;
+                          n:INTEGER;Xspin:INTEGER; VAR matrixIp:CMatrix); 
+PROCEDURE MakeMatrixImin(Ilist: Iarray;VAR ket:produktket;
+                          n:INTEGER;Xspin: INTEGER;VAR matrixIm: CMatrix);
+PROCEDURE MakeMatrixIx(Ilist:Iarray;VAR ket: produktket;n:INTEGER;
+                       Xspin:INTEGER;VAR matIx:CMatrix);
+PROCEDURE MakeMatrixIy(Ilist:Iarray;VAR ket: produktket;n:INTEGER;
+                       Xspin:INTEGER;VAR matIy:CMatrix); 
+PROCEDURE MakeMatrixIz(Ilist:Iarray;VAR ket:produktket;n:INTEGER;
+                       Xspin:INTEGER;VAR matIz:CMatrix);
+
+PROCEDURE MakeTotalIx(n,Nspins:INTEGER;ket:produktket;
+                      Ilist:Iarray; Norm:BOOLEAN;VAR Ixtot:CMatrix);                        
+
+PROCEDURE MakeTotalIy(n,Nspins:INTEGER;ket:produktket;
+                      Ilist:Iarray; Norm:BOOLEAN;VAR Iytot:CMatrix);
+
+PROCEDURE MakeTotalIz(n,Nspins:INTEGER;ket:produktket;
+                      Ilist:Iarray; Norm:BOOLEAN;VAR Iztot:CMatrix); 
+                                                                                         
+END SpinOperatorLib.
