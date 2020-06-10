@@ -1,0 +1,13 @@
+DEFINITION MODULE BinaryFilesInOut;
+
+IMPORT FIO;
+
+EXPORT QUALIFIED BinFileActions,ReadBinFileHeader,WriteBinFileHeader;
+
+PROCEDURE BinFileActions(VAR ndw,n:INTEGER);
+PROCEDURE ReadBinFileHeader(fn:FIO.File;VAR type,num1,num2: INTEGER);
+PROCEDURE WriteBinFileHeader(fn:FIO.File;type,num1,num2: INTEGER);
+
+  (* This module enables some DOS actions on binary files *)
+
+END BinaryFilesInOut.

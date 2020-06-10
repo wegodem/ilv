@@ -1,0 +1,8 @@
+DEFINITION MODULE FOR "C" libprintf ;
+
+EXPORT UNQUALIFIED printf, clrscr;
+
+PROCEDURE printf (a: ARRAY OF CHAR; ...) ;
+PROCEDURE clrscr() ;
+
+END libprintf.

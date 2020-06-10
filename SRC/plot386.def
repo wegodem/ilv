@@ -1,0 +1,6 @@
+DEFINITION MODULE plot386;
+EXPORT QUALIFIED tdplot1,tdplot2,Image;
+PROCEDURE tdplot1(x,y:ARRAY OF REAL;n,tc1,tcb:CARDINAL);
+PROCEDURE tdplot2(x,y,z:ARRAY OF REAL;n,tc1,tcb,tc3:CARDINAL);
+PROCEDURE Image(nc,ndx,ndy,ndz:INTEGER);
+END plot386.

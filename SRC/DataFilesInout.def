@@ -1,0 +1,22 @@
+DEFINITION MODULE DataFilesInout;
+
+EXPORT QUALIFIED RealArrayOut,RealArrayIn,Create_IDL_File;
+
+(***************************************************************************)
+(***    About      : INPUT / OUTPUT OF 1D ASCII (SGPLOT)  DATA FILES     ***)
+(***    Author     : H.S.                                                ***)
+(***    Date       : 20 - 03 -1992                                       ***)
+(***    System     : LOGITECH MODULA2                                    ***)
+(***    Change     : 20 - 03 -1992  BY H.S                               ***)
+(***    Last change: 14 - 01 -2020  BY H.S                               ***)
+(***************************************************************************)
+
+PROCEDURE RealArrayOut(ap:INTEGER; x:ARRAY OF REAL; 
+                       xmin_arg:REAL; xinc_arg:REAL);
+
+PROCEDURE RealArrayIn( VAR ap:INTEGER; VAR x:ARRAY OF REAL; 
+                       VAR xmin_arg:REAL; xinc_arg:REAL);
+
+PROCEDURE Create_IDL_File(fnm:ARRAY OF CHAR);
+ 
+END DataFilesInout.

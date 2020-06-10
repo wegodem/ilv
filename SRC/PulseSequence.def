@@ -1,0 +1,16 @@
+DEFINITION MODULE PulseSequence;
+
+(***************************************************************************)
+(***    About      : Definition of pulse sequences to be simulated       ***)
+(***    Author     : H.S.                                                ***)
+(***    Date       : 20 - 03 -1992                                       ***)
+(***    System     : LOGITECH MODULA2 -> gcc gm2 compiler 2019/2020      ***)
+(***    Change     : 22 - 03 - 1992  BY H.S                              ***)
+(***    Last change: 14 - 01 - 2020  BY H.S     gm2-version working      ***)
+(***************************************************************************)  
+
+EXPORT QUALIFIED ComposePulseSequence;
+
+PROCEDURE ComposePulseSequence;
+
+END PulseSequence.

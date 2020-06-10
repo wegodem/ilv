@@ -1,0 +1,18 @@
+DEFINITION MODULE GradientLib;
+
+EXPORT QUALIFIED CalcGradientFields;
+
+(****************************************************************)
+(****  MODULE WHICH CALCULATES A FEW COMMON GRADIENT SHAPES  ****)
+(****  Author      : H.S.                                    ****)
+(****  System      : LOGITECH MODULA2                        ****)
+(****  Date        : 29 - 03 - 1992                          ****)
+(****  Last change : 29 - 02 - 1992    By : HS               ****)
+(****    Last change: 14 - 01 - 2020  BY H.S                 ****)
+(****                     gm2-version working                ****)
+(****************************************************************)
+
+
+PROCEDURE CalcGradientFields(ap:INTEGER; h:REAL ;VAR gs: ARRAY OF REAL);
+
+END GradientLib.
