@@ -1,6 +1,0 @@
-DEFINITION MODULE PulseSequence;
-EXPORT QUALIFIED ComposePulseSequence;
-
-PROCEDURE ComposePulseSequence;
-
-END PulseSequence.
